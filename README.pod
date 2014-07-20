@@ -1,0 +1,20 @@
+=head1 NAME
+
+Whats::My::IP - Get your public ip address
+
+=head1 SYNOPSIS
+
+    use Whats::My::IP;
+    my $myip = Whats::My::IP->new;
+    my $ip   = $myip->get;
+    warn "Your ip is: $ip";
+
+=head1 AUTHOR
+
+Hernan Lopes
+
+
+=cut
+
+
+
