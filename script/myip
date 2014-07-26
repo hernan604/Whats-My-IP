@@ -1,0 +1,5 @@
+#!/usr/bin/env perl
+use My::IP;
+my $myip = My::IP->new;
+my $ip = $myip->get;
+print $ip;

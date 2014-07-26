@@ -1,11 +1,11 @@
 =head1 NAME
 
-Whats::My::IP - Get your public ip address
+My::IP - Get your public ip address
 
 =head1 SYNOPSIS
 
-    use Whats::My::IP;
-    my $myip = Whats::My::IP->new;
+    use My::IP;
+    my $myip = My::IP->new;
     my $ip   = $myip->get;
     warn "Your ip is: $ip";
 

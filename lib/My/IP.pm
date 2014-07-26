@@ -1,4 +1,4 @@
-package Whats::My::IP;
+package My::IP;
 use Moose;
 use HTTP::Tiny;
 
@@ -8,7 +8,7 @@ has ua => (
     is      => "rw", 
     default => sub { 
         HTTP::Tiny->new( 
-            agent => "Whats::My::IP $VERSION" 
+            agent => "My::IP $VERSION" 
         ) 
     } 
 );

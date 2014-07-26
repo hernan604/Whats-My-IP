@@ -1,7 +1,7 @@
 use Test::More;
-use Whats::My::IP;
-my $myip = Whats::My::IP->new;
+use My::IP;
+my $myip = My::IP->new;
 my $ip = $myip->get;
-warn "Your ip is: $ip";
+ok( $ip =~ m#[0-9]+.[0-9]+.[0-9]+.[0-9]+#g, "reveived an ip $ip" );
 
-1;
+done_testing;
